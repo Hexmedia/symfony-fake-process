@@ -47,7 +47,7 @@ class FakeProcess extends BaseProcess
      * @param float|int|null $timeout
      * @param array          $options
      */
-    public function __construct($commandline, $cwd, $env, $input, $timeout, array $options)
+    public function __construct($commandline, $cwd = null, array $env = null, $input = null, $timeout = 60, array $options = array())
     {
         $this->commandline = $commandline;
         $this->commands = array();
