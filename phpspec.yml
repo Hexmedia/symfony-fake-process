@@ -1,0 +1,5 @@
+suites:
+    fake_processs:
+        namespace: Hexmedia\Symfony\FakeProcess
+        psr4_prefix: Hexmedia\Symfony\FakeProcess
+        src_path: ./
