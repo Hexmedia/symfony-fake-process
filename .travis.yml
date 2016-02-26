@@ -4,7 +4,8 @@ sudo: false
 
 branches:
   only:
-    - master
+    - 3.x
+    - 2.x
 
 cache:
   directories:
