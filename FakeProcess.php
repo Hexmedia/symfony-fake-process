@@ -8,9 +8,7 @@
 namespace Hexmedia\Symfony\FakeProcess;
 
 use Symfony\Component\Process\Exception\RuntimeException;
-use Symfony\Component\Process\Exception\LogicException;
 use Symfony\Component\Process\Process as BaseProcess;
-use Symfony\Component\Process\ProcessUtils;
 
 /**
  * Class FakeProcess
@@ -164,16 +162,25 @@ class FakeProcess extends BaseProcess
         //Do nothing:)
     }
 
+    /**
+     * @return string
+     */
     public function getErrorOutput()
     {
         return '';
     }
 
+    /**
+     * @return int
+     */
     public function getExitCode()
     {
         return $this->command['exitCode'];
     }
 
+    /**
+     * @return string
+     */
     public function getOutput()
     {
         return $this->response;

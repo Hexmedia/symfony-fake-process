@@ -39,6 +39,8 @@ class FakeProcessBuilder extends BaseProcessBuilder
     public function __construct(array $arguments = array())
     {
         $this->arguments = $arguments;
+
+        parent::__construct($arguments);
     }
 
     /**
@@ -276,7 +278,7 @@ class FakeProcessBuilder extends BaseProcessBuilder
             $env = $this->env;
         }
 
-        $process = new Process($script, $this->cwd, $env, $this->input, $this->timeout, $options);
+        $process = new FakeProcess($script, $this->cwd, $env, $this->input, $this->timeout, $options);
 
         if ($this->commands) {
             $process->setCommands($this->commands);
