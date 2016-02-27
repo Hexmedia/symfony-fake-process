@@ -254,7 +254,7 @@ class FakeProcessBuilder extends BaseProcessBuilder
     /**
      * Creates a Process instance and returns it.
      *
-     * @return Process
+     * @return FakeProcess
      *
      * @throws LogicException In case no arguments have been provided
      */
