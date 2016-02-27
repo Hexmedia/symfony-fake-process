@@ -1,25 +1,31 @@
 {
-    "name": "hexmedia/symfony-fake-process",
-    "description": "Fake Symofny Process for testing purposes.",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Krystian Kuczek",
-            "email": "krystian@hexmedia.pl"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "symfony/process": ">=2.0,<3.0"
-    },
-    "require-dev": {
-        "phpspec/phpspec": "~2.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "Hexmedia\\Symfony\\FakeProcess\\": "./"
-        }
+  "name": "hexmedia/symfony-fake-process",
+  "description": "Fake Symofny Process for testing purposes.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krystian Kuczek",
+      "email": "krystian@hexmedia.pl"
     }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "symfony/process": ">=2.0,<3.0"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hexmedia\\Symfony\\FakeProcess\\": "./"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-3.x": "3.0.x-dev",
+      "dev-2.x": "2.0.x-dev"
+    }
+  }
 }
