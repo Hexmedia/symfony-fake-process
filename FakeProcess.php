@@ -144,7 +144,7 @@ class FakeProcess extends BaseProcess
     /**
      * {@inheritdoc}
      */
-    public function wait($callback = null)
+    public function wait(callable $callback = null)
     {
         $commandCallback = $this->command['callback'];
         $exitCode = $this->command['exitCode'];
