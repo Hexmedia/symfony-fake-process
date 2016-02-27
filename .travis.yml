@@ -47,8 +47,6 @@ before_install:
   - cat ./install.sh
 
 install:
-  - $HOME/.composer/vendor/bin/box --version
-  - $HOME/.composer/vendor/bin/phing -v
   - export COMPOSER_ROOT_VERSION=dev-master
   - travis_retry /bin/bash ./install.sh
 

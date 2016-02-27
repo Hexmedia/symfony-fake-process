@@ -164,16 +164,25 @@ class FakeProcess extends BaseProcess
         //Do nothing:)
     }
 
+    /**
+     * @return string
+     */
     public function getErrorOutput()
     {
         return '';
     }
 
+    /**
+     * @return int
+     */
     public function getExitCode()
     {
         return $this->command['exitCode'];
     }
 
+    /**
+     * @return string
+     */
     public function getOutput()
     {
         return $this->response;
